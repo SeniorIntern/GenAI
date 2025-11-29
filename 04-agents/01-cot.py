@@ -3,16 +3,30 @@
 LLM works on pre trained data. They have knowledge cutoff. Thus, they don't have real time data.
 
 
-## What is an AI agent?
-An AI agent is an autonomous decision-making system that perceives inputs (data, APIs, sensors), reasons using models or rules, and performs actions (scripts, tools, automation) to achieve defined objectives.
 
+
+## What is an AI agent?
+An AI agent is a program that uses language models to perform tasks autonomously, making its own decisions to achieve goals set by humans.
+
+They are autonomous - freedom to act independently
+They perceives inputs (data, APIs, sensors)
+They reasons using models or rules,
+They performs actions (scripts, tools, automation) to achieve defined objectives.
+
+
+It is unlike a simple chatbot that only responds to commands, an agent can plan, reason, and take a series of actions to complete a complex task, often by using tools like databases or other software.
 
 It is like a digital assistant that doesn’t just give information but actually completes tasks on your behalf — for example booking tickets, writing and sending emails, searching for deals, or monitoring data automatically.
 
 Analogy - AI Agent is like giving ChatGPT a mission, and it figures out how to complete it step by step — using tools, memory, planning.
 
 Main purpose of Agent - Solve complex tasks through planning, decision-making, and iteration.
-Info - Tool calling is a core part of AI Agent behavior
+
+> [!INFO]
+> Tool calling is a core part of AI Agent behavior
+
+
+
 
 ## AI Agent vs Normal LLM (ChatGPT Q&A Mode)
 “ChatGPT gives answers; an AI agent gets things done.”
@@ -24,6 +38,9 @@ AI agent: Can run code, browse internet, call APIs, automate computer.
 
 Normal LLM: Single message → single reply
 AI agent: Multi-step planning + loops
+
+
+
 
 ## Mini Example in Real Life
 "Find the cheapest iPhone 16 in UAE, notify me if price < AED 3500, and order automatically."
