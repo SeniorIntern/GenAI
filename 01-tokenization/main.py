@@ -20,12 +20,12 @@ import tiktoken
 
 encoder = tiktoken.encoding_for_model("gpt-4o")
 
-print("vocab side- ", encoder.n_vocab)
+print("vocab size- ", encoder.n_vocab)  # vocab size-  200019
 
 text = "Nikhil"
 
 tokens = encoder.encode(text)
-print("Token: ", tokens)
+print("Token: ", tokens)  # Token:  [45, 18226, 311]
 
 decoded = encoder.decode(tokens)
-print("Decoded Text: ", decoded)
+print("Decoded Text: ", decoded)  # Decoded Text:  Nikhil
