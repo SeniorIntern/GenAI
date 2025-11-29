@@ -3,9 +3,13 @@ name = "gen-ai"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
+requires-python = ">=3.12"
 dependencies = [
-    "openai>=2.7.2",
+    "langchain-community>=0.4.1",
+    "langchain-google-genai>=3.2.0",
+    "langchain-qdrant>=1.1.0",
+    "langchain-text-splitters>=1.0.0",
+    "openai>=2.8.1",
     "python-dotenv>=1.2.1",
     "tiktoken>=0.12.0",
 ]
