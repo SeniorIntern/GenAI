@@ -15,6 +15,15 @@ client = OpenAI(
     api_key=api_key, base_url="https://generativelanguage.googleapis.com/v1beta/openai/"
 )
 
+"""
+# works if only using openai key and sdk
+result = client.responses.create(
+    model="gemini-2.5-flash", input="What is result of 7x6"
+)
+
+print(result.output_text)
+
+"""
 result = client.chat.completions.create(
     model="gemini-2.5-flash",
     messages=[
