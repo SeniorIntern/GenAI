@@ -1,6 +1,8 @@
 """
 VECTOR EMBEDDING - A vector embedding is a way of representing complex data in numerical form, while preserving the semantic (structural meaning) of that data
-Vector embeddings are generated from the tokens.
+Vector embeddings are generated from the token ID.
+
+# Refer to notes from 01-tokenization/main.py to understand need of vector embedding
 """
 
 from openai import OpenAI
