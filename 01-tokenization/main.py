@@ -20,7 +20,7 @@ TOKENS: This, is, a, white, tiger
     EMBEDDINGS - Turn Token into numerical ID/representation capturing their meaning using vocabulary
     |
     v
-[[1231, 13213, 1321231], [412,132141,1231312]]
+[1231, 13213, 1321231]
 """
 
 import tiktoken
