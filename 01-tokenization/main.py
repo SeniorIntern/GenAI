@@ -1,9 +1,10 @@
 """
 TOKEN - chunk of text. represented as number because that's what the model understands
-A token is typically a word, subword, or even character depending on the tokenizer used.
+A token is in most cases a word, parts of word, or even character depending on the tokenizer used.
 The model reads it as a single unit of meaning.
 
-CONTEXT WINDOW - maximum number of tokens the model can consider at once when generating or understanding text.
+CONTEXT WINDOW - 
+maximum amount of information—measured in tokens that a LLM can process, "see", and remember at one time during a single interaction.
 
 VOCAB SIZE - Vocabulary size refers to the total number of unique tokens that the model recognizes and can process.
 Vocabulary size refers to the total number of unique tokens that the model recognizes and can process.
