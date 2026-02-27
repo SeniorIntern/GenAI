@@ -1,20 +1,26 @@
 """
-TOKEN - chunk of text. represented as number because that's what the model understands
+TOKEN -
 A token is in most cases a word, parts of word, or even character depending on the tokenizer used.
 The model reads it as a single unit of meaning.
 
-CONTEXT WINDOW - 
-maximum amount of information—measured in tokens that a LLM can process, "see", and remember at one time during a single interaction.
+CONTEXT WINDOW - maximum amount of information—measured in tokens that a LLM can process, "see", and remember at one time during a single interaction.
 
-VOCAB SIZE - Vocabulary size refers to the total number of unique tokens that the model recognizes and can process.
-Vocabulary size refers to the total number of unique tokens that the model recognizes and can process.
+VOCAB SIZE - Vocabulary size refers to the total number of unique tokens that the model recognizes.
+
+LLMs do not directly read text. They convert tokens into numbers to analyze patterns and semantic relationships.
 
 FLOW:
-1. Raw text -> tokens -> ["The", " cat", " sat", " on", " the", " mat"]
-2. Tokens -> token IDs -> [976, 9059, 10139, 402, 290, 2450].
-        These numbers are IDs of the tokens in the model's internal vocabulary.
-3. Token IDs -> vectors (embedding lookup) -> list of dense vectors
-4. Model uses those vectors for meaning, similarity, or prediction -> final embedding or next-token probabilities
+INPUT: This is a white tiger
+    |
+    TOKENIZATION - break down into small pieces (words or parts of words)
+    |
+    v
+TOKENS: This, is, a, white, tiger
+    |
+    EMBEDDINGS - Turn Token into numerical ID/representation capturing their meaning using vocabulary
+    |
+    v
+[[1231, 13213, 1321231], [412,132141,1231312]]
 """
 
 import tiktoken
