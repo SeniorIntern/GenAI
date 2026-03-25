@@ -17,7 +17,7 @@ from openai import OpenAI
 load_dotenv()
 
 # api_key = os.getenv("OPENAI_API_KEY")
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("GEMINI_KEY")
 
 
 # Source - https://stackoverflow.com/a

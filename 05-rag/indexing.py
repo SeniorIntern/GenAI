@@ -54,7 +54,7 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 load_dotenv()
 
-api_key = os.getenv("GEMINI_API_KEY")
+api_key = os.getenv("GEMINI_KEY")
 
 if api_key is None:
     print(f"Error getting api key {api_key}")
